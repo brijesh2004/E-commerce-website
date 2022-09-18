@@ -1,0 +1,35 @@
+
+.top{
+display:flex;
+position:relative;
+justify-content:center;
+
+}
+.topbrand{
+display:flex;
+
+}
+.mensimg{
+cursor:pointer;
+padding:5px;
+width:15vw;
+height:150px;
+box-shadow:5px 5px 5px gray;
+}
+
+
+@media (max-width:700px){
+.top{
+display:flex;
+flex-direction:column;
+
+}
+.mensimg{
+width:20vw;
+}
+.topbrand{
+position:relative;
+justify-content:center;
+
+}
+}
