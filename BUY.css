@@ -1,0 +1,37 @@
+
+body{
+    user-select: none;
+}
+.max-width-1{
+    width:80vw;
+    background-color: rgb(162, 255, 0);
+}
+.m-auto{
+    margin: auto;
+}
+.name{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.input{
+    width: 300px;
+    border: 2px solid black;
+    height: 25px;
+    border-radius: 10px;
+}
+.enter{
+    font-size: 30px;
+}
+.btn{
+    width: 100px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: goldenrod;
+}
+.btn:hover{
+    background-color: green;
+    color: white;
+}

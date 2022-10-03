@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BUY.css">
+    <title>Buy The Product </title>
+</head>
+<body>
+    <div class="userDetail  max-width-1  m-auto">
+        <br><br><br>
+        <div class="name ">  <span class="enter">Name</span>   <input class="input" type="text" id="nam" > <br><br><br></div>
+     <div class="name"> <span class="enter"> Email </span>  <input class="input" type="email" id="email"><br><br><br></div>
+ <div class="name"> <span class="enter">Last 6 digit of your card </span>  <input class="input" type="number" id="card"> <br><br><br></div>
+ <div class="name">
+    <span class="enter">Address </span>  <input class="input" type="text" id="add"><br><br><br>
+ </div>
+ <div class="name">
+    <span class="enter">  Pin code</span><input class="input" type="number" id="pincode"><br><br><br>
+ </div>
+ <div class="name">
+   <button class="btn" onclick="Success()"> Pay</button>
+ </div>
+ <div class="name">
+   <h3 id="thanks"></h3>
+  </div>
+   
+</div>
+</body>
+<script>
+    
+const Success=()=>{
+    const add = document.getElementById("add").value;
+    const name = document.getElementById("nam").value;
+    const email = document.getElementById("email").value;
+    const card= document.getElementById("card").value;
+    const pincode = document.getElementById("pincode").value;
+    const thanks = document.getElementById("thanks");
+    if(name==""){
+        alert("please enter the Name");
+     
+    }
+    else  if(email==""){
+        alert("please enter the email");
+     
+    }
+    else  if(card==""){
+        alert("please enter the card details");
+     
+    }
+    else  if(add==""){
+        alert("please enter the Address");
+     
+    }
+    else  if(pincode==""){
+        alert("please enter the pincode");
+     
+    }
+  
+    else{
+        thanks.innerText='Thanks for buying our product ';
+alert(`You have successful buy your product we will sent the product at ${add}`);
+    
+    }
+}
+
+</script>
+</html>
