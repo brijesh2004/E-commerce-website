@@ -87,3 +87,23 @@ input{
     box-shadow: 5px 5px;
     cursor: pointer;
 }
+
+@media  (max-width:800px){
+    .sign_main {
+        position: absolute;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20vh;
+        justify-content: center;
+    }
+    .sign{
+        width: 100vw;
+        height: 400px;
+        
+    }
+    input{
+        border: 2px solid ;
+        width: 200px;
+        height: 30px;
+    }
+}
